@@ -5,7 +5,7 @@ const data = [
     icon: 'fab fa-react',
     url: 'https://project-react-store.netlify.app/',
     src: 'https://github.com/JurysR/React-comfy-store',
-    img: 'https://github.com/JurysR/portfolio/tree/main/images/thumbnails/comfy-store-react.png',
+    img: './images/thumbnails/comfy-store-react.png',
   },
   {
     title: 'Stock Photos',
@@ -13,7 +13,7 @@ const data = [
     icon: 'fab fa-react',
     url: 'https://project-react-stock-photos.netlify.app/',
     src: 'https://github.com/JurysR/React-API-Project-Stock-Photos',
-    img: '../images/thumbnails/stock-photos-react.png',
+    img: './images/thumbnails/stock-photos-react.png',
   },
   {
     title: 'Markdown Preview',
@@ -21,7 +21,7 @@ const data = [
     icon: 'fab fa-react',
     url: 'https://project-react-markdown-preview.netlify.app/',
     src: 'https://github.com/JurysR/React-Markdown-Preview',
-    img: '../images/thumbnails/markdown-preview.png',
+    img: './images/thumbnails/markdown-preview.png',
   },
   {
     title: 'Grocery Bud',
@@ -29,7 +29,7 @@ const data = [
     icon: 'fab fa-react',
     url: 'https://project-react-grocery-bud.netlify.app/',
     src: 'https://github.com/JurysR/React-Grocery-Bud',
-    img: '../images/thumbnails/grocery-bud.png',
+    img: './images/thumbnails/grocery-bud.png',
   },
   {
     title: 'Store',
@@ -37,7 +37,7 @@ const data = [
     icon: 'fab fa-js',
     url: 'https://jurysr.github.io/Comfy-store/',
     src: 'https://github.com/JurysR/Comfy-store',
-    img: '../images/thumbnails/comfy-store.png',
+    img: './images/thumbnails/comfy-store.png',
   },
   {
     title: 'Cocktails API',
@@ -45,7 +45,7 @@ const data = [
     icon: 'fab fa-js',
     url: 'https://jurysr.github.io/Cocktails/',
     src: 'https://github.com/JurysR/Cocktails',
-    img: '../images/thumbnails/cocktails.png',
+    img: './images/thumbnails/cocktails.png',
   },
   {
     title: 'Gallery',
@@ -53,7 +53,7 @@ const data = [
     icon: 'fab fa-js',
     url: 'https://jurysr.github.io/gallery/',
     src: 'https://github.com/JurysR/gallery',
-    img: '../images/thumbnails/gallery.png',
+    img: './images/thumbnails/gallery.png',
   },
   {
     title: 'Coutdown Timer',
@@ -61,7 +61,7 @@ const data = [
     icon: 'fab fa-js',
     url: 'https://jurysr.github.io/Countdown-timer/',
     src: 'https://github.com/JurysR/Countdown-timer',
-    img: '../images/thumbnails/countdown-timer.png',
+    img: './images/thumbnails/countdown-timer.png',
   },
 ];
 export default data;
