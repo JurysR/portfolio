@@ -5,7 +5,7 @@ const data = [
     icon: 'fab fa-react',
     url: 'https://project-react-store.netlify.app/',
     src: 'https://github.com/JurysR/React-comfy-store',
-    img: '../images/thumbnails/comfy-store-react.png',
+    img: 'https://github.com/JurysR/portfolio/tree/main/images/thumbnails/comfy-store-react.png',
   },
   {
     title: 'Stock Photos',
