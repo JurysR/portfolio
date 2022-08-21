@@ -424,11 +424,8 @@ About
 ===============
 */
 .about-title {
-  text-align: left;
+  text-align: center;
   margin-bottom: 2rem;
-}
-.about-title .underline {
-  margin-left: 0;
 }
 .about-center {
   display: grid;
@@ -445,6 +442,13 @@ About
 @media screen and (min-width: 992px) {
   .section.about {
     padding: 10rem 0;
+  }
+  .about-title {
+    text-align: left;
+    margin-bottom: 2rem;
+  }
+  .about-title .underline {
+    margin-left: 0;
   }
   .about-center {
     grid-template-columns: 1fr 1fr;
