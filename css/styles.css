@@ -18,25 +18,58 @@ Variables
   --clr-primary-4: hsl(206, 33%, 96%);
   --clr-nav-1: linear-gradient(90deg, #063251, #065125, #250651);
   --clr-nav-2: linear-gradient(270deg, #947049, #486c93);
-  --clr-hero-1: linear-gradient(
+  /* --clr-hero-1: linear-gradient(
     340deg,
     hsla(249, 89%, 54%, 1) 0%,
     hsla(249, 75%, 27%, 1) 30%,
     hsla(248, 71%, 24%, 1) 41%,
     hsla(249, 75%, 27%, 1) 50%,
     hsla(249, 87%, 50%, 1) 100%
-  );
-  --clr-hero-2: linear-gradient(270deg, #947049, #486c93);
-  --clr-project-1: linear-gradient(
-    60deg,
-    hsla(148, 100%, 22%, 1) 8%,
-    hsla(210, 80%, 33%, 1) 100%
+  ); */
+  --clr-hero-1: linear-gradient(
+    135deg,
+    hsla(214, 70%, 31%, 1) 0%,
+    hsla(220, 78%, 29%, 1) 100%
   );
 
-  --clr-project-2: linear-gradient(195deg, #947049, #486c93);
-  --clr-project-3: linear-gradient(90deg, #ccc1b3, #b3cacc, #ccb4b3, #c1b3cc);
-  --clr-project-4: linear-gradient(90deg, #ab7a5f, #5f90ab);
-  --clr-project-5: linear-gradient(134deg, #8996a2, #8aa396, #968aa3);
+  --clr-hero-2: linear-gradient(270deg, #947049, #486c93);
+  --clr-project-1: linear-gradient(
+    90deg,
+    hsla(185, 100%, 22%, 1) 0%,
+    hsla(179, 100%, 18%, 1) 100%
+  );
+
+  /* --clr-project-1: linear-gradient(
+  60deg,
+    hsla(148, 100%, 22%, 1) 8%,
+    hsla(210, 80%, 33%, 1) 100%
+  ); */
+
+  --clr-project-2: linear-gradient(
+    90deg,
+    hsla(23, 27%, 43%, 1) 0%,
+    hsla(31, 34%, 43%, 1) 100%
+  );
+  /* --clr-project-2: linear-gradient(195deg, #947049, #486c93); */
+  /* --clr-project-3: linear-gradient(90deg, #ccc1b3, #b3cacc, #ccb4b3, #c1b3cc); */
+  --clr-project-3: linear-gradient(
+    225deg,
+    hsla(2, 20%, 75%, 1) 0%,
+    hsla(0, 4%, 75%, 1) 100%
+  );
+  /* --clr-project-4: linear-gradient(90deg, #ab7a5f, #5f90ab); */
+  --clr-project-4: linear-gradient(
+    315deg,
+    hsla(22, 30%, 52%, 1) 0%,
+    hsla(21, 25%, 52%, 1) 100%
+  );
+  --clr-project-5: linear-gradient(
+    135deg,
+    hsla(190, 12%, 62%, 1) 0%,
+    hsla(209, 22%, 69%, 1) 100%
+  );
+
+  /* --clr-project-5: linear-gradient(134deg, #8996a2, #8aa396, #968aa3); */
 
   --clr-project-0: linear-gradient(
     304deg,
@@ -116,7 +149,6 @@ h4 {
 p {
   margin-bottom: 1.25rem;
   color: var(--clr-black);
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 }
 @media screen and (min-width: 800px) {
   h1 {
@@ -162,6 +194,9 @@ p {
   }
   p {
     font-size: 1.6rem;
+  }
+  .hero-img .hero-photo {
+    width: 35%;
   }
 }
 
@@ -338,7 +373,7 @@ Sidebar
   left: 0;
   width: 100%;
   height: 100%;
-  background: var(--clr-project-0);
+  background: var(--clr-project-2);
   /* background: var(--clr-primary-4); */
   z-index: 4;
   display: grid;
@@ -411,8 +446,13 @@ Hero
 }
 .hero-img {
   display: block;
-  grid-column-start: 1;
-  grid-column-end: span 2;
+}
+
+.hero-img .hero-photo {
+  width: 60%;
+  margin: 2rem auto;
+  border-radius: 12px;
+  box-shadow: 0px 0px 16px 3px rgba(255, 255, 255, 0.28);
 }
 .hero {
   background: var(--clr-hero-1);
@@ -420,11 +460,11 @@ Hero
 .hero-center {
   display: grid;
   place-items: center;
-  /* padding-top: 4rem; */
 }
 
 .hero-info {
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+  margin: 0 auto 1rem;
 }
 .hero h1 {
   color: var(--clr-primary-2);
@@ -443,7 +483,6 @@ Hero
 .hero-photo {
   -o-object-fit: cover;
   object-fit: cover;
-  /* height: 30rem; */
   max-width: 100%;
 
   position: relative;
@@ -452,8 +491,10 @@ Hero
 @media screen and (min-width: 600px) {
   .hero-img {
     display: block;
-    position: relative;
-    grid-column-start: 2;
+  }
+
+  .hero-img .hero-photo {
+    width: 55;
   }
   .hero-center {
     grid-template-columns: 1fr 1fr;
@@ -471,22 +512,18 @@ Hero
 
     position: relative;
   }
+  .hero-info {
+    margin: 0 auto;
+  }
 }
 
 .about-img .hero-photo {
   border-radius: 12px;
 }
 
-.hero-img .hero-photo {
-  width: 30%;
-  margin: 0 auto;
-  border-radius: 12px;
-  box-shadow: 0px 0px 16px 3px rgba(255, 255, 255, 0.28);
-}
-
-@media screen and (min-width: 2000px) {
-  .hero-photo {
-    /* height: 35rem; */
+@media screen and (min-width: 1400px) {
+  .hero-img .hero-photo {
+    width: 38%;
   }
 }
 /*
@@ -537,7 +574,7 @@ Projects
   .projects-title {
     text-align: left;
     margin-bottom: 2rem;
-    text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.6);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
   }
   .projects-title .underline {
     margin-left: 0;
@@ -580,14 +617,16 @@ About Page
 .about-title {
   text-align: center;
   margin-bottom: 2rem;
-  text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.6);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
 }
 .about-center {
   display: grid;
   gap: 3rem 2rem;
 }
 .about-img {
-  display: none;
+  display: block;
+  width: 50%;
+  margin: 4rem auto 0;
 }
 
 .about-info p {
@@ -616,7 +655,7 @@ About Page
     position: relative;
     justify-self: center;
     display: block;
-    width: 50%;
+    width: 95%;
   }
   .about-img::before {
     left: -2rem;
@@ -626,6 +665,11 @@ About Page
   }
   .about-info .links {
     margin: 0;
+  }
+}
+@media screen and (min-width: 1356px) {
+  .about-img {
+    width: 450px;
   }
 }
 
